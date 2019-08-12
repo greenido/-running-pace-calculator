@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Running Pace Calculator</title>
-        <meta name="description" content="">
+        
+        <meta name="description" content="Running pace calculator for your next marathon">
+        <meta name="author" content="Ido Green | greenido.wordpress.com | @greenido">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -18,7 +20,6 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <div class="container">
           <div class="wrapper">
           <h2>🏃🏼‍♀️ Running Pace Calculator</h2>
@@ -30,12 +31,13 @@
                       <label><input class="form-radio" type="radio" name="distance" value="26.2" id="marathon" checked="checked" >26.2</label>
                       <label><input class="form-radio" type="radio" name="distance" value="31.1" id="fiftyk">50K</label>
                       <label><input class="form-radio" type="radio" name="distance" value="50" id="fiftymiler">50M</label>
+                      <label><input class="form-radio" type="radio" name="distance" value="62.2" id="hundredkm">100K</label>
                       <label><input class="form-radio" type="radio" name="distance" value="100" id="hundredmiler">100M</label>
                   </fieldset>
               </div>
               <div class="sliders-div row">
                 <div class="slider-wrapper">
-                  <label>Hours: <input type="range" min="0" max="6" value="3" class="slider" id="hourSlide" step="1"></label>
+                  <label>Hours: <input type="range" min="0" max="24" value="3" class="slider" id="hourSlide" step="1"></label>
                   <label>Minutes: <input type="range" min="0" max="59" value="30" class="slider" id="minuteSlide" step="1"></label>
                   <label>Seconds: <input type="range" min="0" max="59" value="0" class="slider" id="secondSlide" step="1" ></label>
                 </div>
@@ -52,14 +54,22 @@
             <h3 class="output" id="PaceValue"></h3>
             <h3 class="output" id="PaceValue-km"></h3>
           </div>
-
         </div>
       </div>
       
       <hr>
       <footer>
-          🏃🏽‍♂️<a href="https://ido-green.appspot.com">Ido's Talks and Code</a> 🏃🏼‍♀️
-          <small>Updated: April 2019</small>
+        <br>
+        <h2>
+          ℹ️ Psst... 
+        </h2>
+        In case you wish a great calculator that can estimate how fast you’d run your next marathon based on your training regimen 
+        and your performance in just one recent race <br><br>Check this 
+        <a href="https://projects.fivethirtyeight.com/marathon-calculator/" target="_blank">Five Thirty Eight Marathon Calculator</a><br>
+        <br>
+        <br>
+            🏃🏽‍♂️<a href="https://ido-green.appspot.com">Ido's Talks</a> 🏃🏼‍♀️
+          <small>Updated: Aug 2019</small>
       </footer>
       
       <!--  JS  -->
@@ -76,7 +86,7 @@
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
+            m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
