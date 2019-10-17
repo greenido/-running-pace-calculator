@@ -239,3 +239,11 @@ footer {
 footer > a {
   color: #55ff84;
 }
+
+#otherlinks {
+  background: lightblue;
+  color: darkblue;
+  padding: 1em;
+  border-radius: 22px;
+  
+}
